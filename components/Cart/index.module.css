@@ -1,0 +1,100 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.container > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 20;
+  background-color: #fff;
+  font-size: 1.6rem;
+}
+
+.container > div main {
+  width: 80%;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.titleContainer h2 {
+  margin-left: 1em;
+}
+
+.titleContainer svg {
+  font-size: 2.5rem;
+}
+
+.itemsContainer ul {
+  padding: 0;
+}
+
+.itemsContainer ul li {
+  display: flex;
+  jusitfy-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.itemInfo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.itemDetailsContainer {
+  margin-left: 1em;
+}
+
+.itemDetailsContainer p {
+  line-height: 1;
+}
+
+.quantity {
+  color: #adadad;
+}
+
+.totalContainer {
+  text-align: center;
+}
+
+.totalContainer div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total {
+  font-weight: 800;
+}
+
+.price {
+  font-weight: 800;
+  color: green;
+}
+
+.totalContainer button {
+  width: 100%;
+  margin-top: 2em;
+}
+
+@media (min-width: 600px) {
+  .container {
+    justify-content: right;
+    position: absolute;
+  }
+
+  .container > div {
+    width: 30em;
+    height: 100%;
+    position: fixed;
+  }
+}

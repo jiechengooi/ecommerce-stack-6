@@ -1,0 +1,119 @@
+.container {
+  display: flex;
+  width: 100vw;
+  height: auto;
+  min-height: 70vh;
+  position: relative;
+  top: 0;
+}
+
+.bannerNavigation svg {
+  position: absolute;
+  top: 10em;
+  z-index: 10;
+  font-size: 2.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.leftArrow {
+  left: 1em;
+}
+
+.rightArrow {
+  right: 1em;
+}
+
+.container main {
+  width: 80%;
+  margin: auto;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.placeholderBanner {
+  display: block;
+  z-index: 10;
+  color: #fff;
+}
+
+.placeholderBanner h2 {
+  line-height: 1.8em;
+}
+
+.placeholderBanner a {
+  background-color: var(--color-light-brown);
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 1em;
+  border-radius: 1em;
+  transition: all 0.8s;
+}
+
+.placeholderBanner a:hover {
+  background-color: var(--color-brown);
+}
+
+.bannerContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  color: #fff;
+  margin-top: 5em;
+}
+
+.bannerInfoContainer {
+  text-align: center;
+}
+
+.bannerInfoContainer p {
+  font-size: 1.6rem;
+}
+
+.bannerInfoContainer div span {
+  font-size: 1.6rem;
+}
+
+.bannerInfoContainer a {
+  display: inline-block;
+  margin-top: 1em;
+  background-color: var(--color-light-brown);
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 1em;
+  border-radius: 1em;
+  transition: all 0.8s;
+}
+
+.bannerInfoContainer a:hover {
+  background-color: var(--color-brown);
+}
+
+@media (min-width: 570px) {
+  .container main {
+    justify-content: start;
+    padding-top: 20em;
+  }
+
+  .bannerContent {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .bannerInfoContainer {
+    text-align: start;
+  }
+
+  .productImageContainer {
+    width: 55em;
+  }
+}

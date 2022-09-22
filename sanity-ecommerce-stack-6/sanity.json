@@ -1,0 +1,30 @@
+{
+  "root": true,
+  "project": {
+    "name": "sanity-ecommerce-stack-6"
+  },
+  "api": {
+    "projectId": "60bswpa2",
+    "dataset": "ecommerce-stack-6"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool",
+    "barcode-input"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    }
+  ]
+}

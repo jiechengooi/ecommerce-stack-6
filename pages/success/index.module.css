@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container main {
+  width: min(95%, 800px);
+  font-size: 1.6rem;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2em;
+}
+
+.container main div {
+  margin: 2em auto;
+}
+
+.container main a {
+  background-color: var(--color-light-brown);
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 1em;
+  border: 0;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.8s;
+}
+
+.container main a:hover {
+  background-color: var(--color-brown);
+}

@@ -1,0 +1,40 @@
+.container {
+  width: 80%;
+  margin: 10em auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 6em;
+}
+
+.container div {
+  display: block;
+  background: #fff;
+  font-size: 1.6rem;
+  padding: 1em;
+}
+
+.imageContainer {
+  text-align: center;
+}
+
+.infoContainer p:last-child {
+  font-weight: 600;
+}
+
+.actionsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.actionsContainer button {
+  background-color: transparent;
+  color: var(--color-light-brown);
+  border: 1px solid var(--color-light-brown);
+}
+
+.actionsContainer button:hover {
+  background-color: var(--color-light-brown);
+  color: #fff;
+}

@@ -1,0 +1,162 @@
+.container header section,
+.container header section a {
+  color: #000;
+}
+
+.container {
+  width: 100xw;
+  height: 100vh;
+}
+
+.container > main {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  min-height: 80vh;
+  height: auto;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+/* Images */
+
+.imagesContainer {
+  width: 100%;
+  height: auto;
+  margin-top: 10em;
+}
+
+.bigImage div,
+.smallImages div {
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.smallImages {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 5em);
+  grid-gap: 0.8em;
+}
+
+.smallImages div {
+  margin-top: 1em;
+}
+
+/* Details */
+
+.infoContainer {
+  width: 100%;
+}
+
+.price {
+  color: var(--color-brown);
+  font-weight: 800;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+}
+
+.quantity p span {
+  border: 1px solid #ddd;
+  padding: 0.8em;
+}
+
+.quantity p span:first-child {
+  color: red;
+  margin-left: 1em;
+}
+
+.quantity p span:last-child {
+  color: green;
+}
+
+.actionsContainer {
+  display: block;
+  margin-top: 2em;
+}
+
+.actionsContainer button {
+  width: 100%;
+}
+
+.actionsContainer button:last-child {
+  background-color: transparent;
+  color: var(--color-light-brown);
+  border: 1px solid var(--color-light-brown);
+  margin-top: 2em;
+}
+
+.actionsContainer button:last-child:hover {
+  background-color: var(--color-light-brown);
+  color: #fff;
+}
+
+/* Products */
+
+.productsContainer h2 {
+  text-align: center;
+}
+
+.productCards {
+  display: inline-flex;
+}
+
+.productCards div {
+  background-color: #fff;
+  padding: 1em;
+  width: 15em;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  margin: 1em;
+  cursor: pointer;
+  transition: all 0.8s;
+}
+
+.productCards div:hover {
+  background-color: var(--color-light-brown);
+  color: #fff;
+}
+
+.productCards div section:first-child {
+  text-align: center;
+}
+
+.productCards div section:last-child p:last-child {
+  font-weight: 800;
+}
+
+/* Media Queries */
+
+@media (min-width: 635px) {
+  .container > main {
+    flex-direction: row;
+  }
+
+  .imagesContainer {
+    width: 30em;
+    margin-right: 4em;
+    margin-top: 4em;
+  }
+}
+
+@media (min-width: 450px) {
+  .actionsContainer {
+    display: flex;
+  }
+
+  .actionsContainer button {
+    width: 10em;
+  }
+
+  .actionsContainer button:last-child {
+    margin-top: 0;
+    margin-left: 2em;
+  }
+}
